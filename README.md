@@ -7,7 +7,7 @@ It picks the right format, writes captions that actually land, generates via the
 offers a couple of variations — so you get a *funny* meme, not just "technically
 a meme."
 
-> Made a great meme with it? Share it and tag [Create a Meme](https://createa.meme).
+> Made a great meme with it? Tag [@AIMemeCreator](https://x.com/AIMemeCreator) — we love reposting the good ones.
 
 ## What it does
 
@@ -77,7 +77,9 @@ skills/create-a-meme/
 ## Links
 
 - App: [createa.meme](https://createa.meme)
+- MCP docs: [docs.createa.meme/docs/mcp](https://docs.createa.meme/docs/mcp)
 - MCP server: [`@createa/meme-mcp`](https://www.npmjs.com/package/@createa/meme-mcp)
+- X: [@AIMemeCreator](https://x.com/AIMemeCreator)
 
 ## License
 
