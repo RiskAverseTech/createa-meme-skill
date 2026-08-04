@@ -7,7 +7,7 @@
     "url": "https://createa.meme"
   },
   "homepage": "https://createa.meme",
-  "repository": "https://github.com/cryptojaz/createa-meme-skill",
+  "repository": "https://github.com/RiskAverseTech/createa-meme-skill",
   "license": "MIT",
   "keywords": ["meme", "meme-generator", "createa", "mcp", "images", "captions"]
 }

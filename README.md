@@ -1,13 +1,13 @@
-# Create a Meme — Claude skill
+# Create a Meme — agent skill
 
-A Claude Code skill that turns any idea into a finished meme with
-[Create a Meme](https://createa.meme). It picks the right format, writes captions
-that actually land, generates via the [`@createa/meme-mcp`](https://www.npmjs.com/package/@createa/meme-mcp)
-tools, and offers a couple of variations — so you get a *funny* meme, not just
-"technically a meme."
+An agent skill — for **Claude Code, Cursor, Cline, and any MCP client** — that
+turns any idea into a finished meme with [Create a Meme](https://createa.meme).
+It picks the right format, writes captions that actually land, generates via the
+[`@createa/meme-mcp`](https://www.npmjs.com/package/@createa/meme-mcp) tools, and
+offers a couple of variations — so you get a *funny* meme, not just "technically
+a meme."
 
-> Made a great meme with it? Tag [@createameme](https://x.com/createameme) — we
-> repost the good ones.
+> Made a great meme with it? Share it and tag [Create a Meme](https://createa.meme).
 
 ## What it does
 
@@ -25,7 +25,8 @@ the output is sharp, not generic.
 ### 1. Connect the Create a Meme MCP (one time)
 
 Grab a free API key at [dashboard.createa.meme](https://dashboard.createa.meme)
-(20 generations/month free), then add the server to `~/.claude.json`:
+(20 generations/month free), then add the server. For **Claude Code**, in
+`~/.claude.json`:
 
 ```jsonc
 {
@@ -39,13 +40,18 @@ Grab a free API key at [dashboard.createa.meme](https://dashboard.createa.meme)
 }
 ```
 
-(Full setup — Cursor, Cline, Continue — in
-[`skills/create-a-meme/references/setup.md`](skills/create-a-meme/references/setup.md).)
+Cursor, Cline, and Continue use the same config shape — full details in
+[`skills/create-a-meme/references/setup.md`](skills/create-a-meme/references/setup.md).
 
-### 2. Add the skill
+### 2. Add the skill guidance
 
-Clone this repo and use it as a plugin, or drop
-`skills/create-a-meme/` into your project's `.claude/skills/`.
+- **Claude Code:** clone this repo and use it as a plugin, or drop
+  `skills/create-a-meme/` into your project's `.claude/skills/`.
+- **Cursor / Cline / any other agent:** point it at [`AGENTS.md`](AGENTS.md) —
+  the same workflow in plain markdown any agent can load.
+
+Both read the same `skills/create-a-meme/references/` files, so the guidance is
+identical everywhere.
 
 ## Use
 
@@ -59,19 +65,19 @@ Just ask:
 ## What's inside
 
 ```
+AGENTS.md                        general playbook (any agent)
 skills/create-a-meme/
-  SKILL.md                     the workflow + rules
+  SKILL.md                       Claude Code skill (the flagship)
   references/
-    tools.md                   the MCP tools, costs, watermarks
-    caption-craft.md           how to write memes that land
-    setup.md                   connecting the MCP
+    tools.md                     the MCP tools, costs, watermarks
+    caption-craft.md             how to write memes that land
+    setup.md                     connecting the MCP
 ```
 
 ## Links
 
 - App: [createa.meme](https://createa.meme)
 - MCP server: [`@createa/meme-mcp`](https://www.npmjs.com/package/@createa/meme-mcp)
-  · [source](https://github.com/cryptojaz/createa-meme-mcp)
 
 ## License
 
