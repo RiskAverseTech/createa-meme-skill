@@ -9,6 +9,19 @@ a meme."
 
 > Made a great meme with it? Tag [@AIMemeCreator](https://x.com/AIMemeCreator) — we love reposting the good ones.
 
+## Quick start (Claude Code)
+
+```
+/plugin marketplace add RiskAverseTech/createa-meme-skill
+/plugin install createa-meme
+```
+
+You'll also need the free [`@createa/meme-mcp`](https://www.npmjs.com/package/@createa/meme-mcp) server connected with an API key — [grab one free](https://dashboard.createa.meme) (20 memes/mo, no card). Then just ask:
+
+> *"Make me a meme about Monday standups."*
+
+Using **Cursor / Cline / another agent** instead? Connect the same MCP and point your agent at [`AGENTS.md`](AGENTS.md). Full setup for every client is below.
+
 ## What it does
 
 - **Text-to-meme** — describe a situation, get a captioned meme.
