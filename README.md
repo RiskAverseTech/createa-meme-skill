@@ -45,8 +45,12 @@ Cursor, Cline, and Continue use the same config shape — full details in
 
 ### 2. Add the skill guidance
 
-- **Claude Code:** clone this repo and use it as a plugin, or drop
-  `skills/create-a-meme/` into your project's `.claude/skills/`.
+- **Claude Code (one command):**
+  ```
+  /plugin marketplace add RiskAverseTech/createa-meme-skill
+  /plugin install createa-meme
+  ```
+  (Or drop `skills/create-a-meme/` into your project's `.claude/skills/`.)
 - **Cursor / Cline / any other agent:** point it at [`AGENTS.md`](AGENTS.md) —
   the same workflow in plain markdown any agent can load.
 
