@@ -38,7 +38,7 @@ the output is sharp, not generic.
 ### 1. Connect the Create a Meme MCP (one time)
 
 Grab a free API key at [dashboard.createa.meme](https://dashboard.createa.meme)
-(20 generations/month free), then add the server. For **Claude Code**, in
+(20 free credits/month), then add the server. For **Claude Code**, in
 `~/.claude.json`:
 
 ```jsonc

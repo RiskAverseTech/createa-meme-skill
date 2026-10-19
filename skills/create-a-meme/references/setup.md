@@ -4,7 +4,7 @@ The skill needs the `@createa/meme-mcp` server connected. There's nothing to
 install — the client runs it on demand via `npx`.
 
 ## 1. Get a free API key
-Sign up at <https://dashboard.createa.meme>. Free tier = 20 generations/month.
+Sign up at <https://dashboard.createa.meme>. Free tier = 20 credits/month (a caption is 1 credit, an AI image 3).
 The key looks like `cam_live_xxxxxxxxxxxxxxxxxxxx`.
 
 ## 2. Add the server

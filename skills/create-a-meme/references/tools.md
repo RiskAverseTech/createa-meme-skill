@@ -6,7 +6,9 @@ successful generation.
 ## `createa_template_search` (free)
 Find templates by keyword or category. Use before `caption`/`generate` when the
 user names a format ("the Drake one", "distracted boyfriend") or a vibe
-("something for shipping a release").
+("something for shipping a release"). Returns up to 50 results per call
+(`limit`); when the result says more remain, repeat with the `offset` it gives
+to page through a category.
 
 ## `createa_meme_generate` (2 credits)
 Text-to-meme. Give it a topic/idea; the AI picks a fitting template and writes
@@ -29,6 +31,13 @@ photo + a prompt. Describe what to **preserve** ("keep his exact face, hair, and
 expression") as strongly as what to change. Best for "put this person in X",
 mascot edits, and stylized portraits.
 
+## `createa_check_generation` (free)
+Long generations (remix especially, often 60–120s) don't block the chat: after
+about 50 seconds the generation tool returns a result id like `gen_1` instead of
+the image, while the work keeps running. That is **not a failure — don't retry**
+(credits are already spent and a retry pays twice). Call
+`createa_check_generation` with that id until it returns the image URL.
+
 ## Watermarks (Starter+ plans)
 Every generation tool accepts an optional `watermark` — provide **either** `text`
 **or** `logo_url`:
@@ -44,5 +53,10 @@ keys requesting a watermark get a 402 — it's a Starter+ feature, no per-call
 upcharge.
 
 ## Notes
-- Costs draw from the account's credit balance (free tier: 20 generations/month).
-- Generation may be async; wait for the returned image URL before reporting done.
+- Costs draw from the account's credit balance (free tier: 20 credits/month, so
+  e.g. 20 captions or 6 AI images).
+- Wait for an actual image URL before reporting done; if you got a `gen_` id,
+  collect it with `createa_check_generation`.
+- A `NSFW_REJECTED` result with `refused_by: "model"` means that image model's own
+  safety system declined the prompt; rephrasing with more scene context (where
+  it is, what's happening) often succeeds. Don't resend the identical prompt.
