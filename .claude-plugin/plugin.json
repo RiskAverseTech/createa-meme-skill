@@ -1,7 +1,7 @@
 {
   "name": "createa-meme",
   "displayName": "Create a Meme",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Turn any idea into a finished meme with Create a Meme \u2014 picks the format, writes captions that land, and generates via the @createa/meme-mcp tools.",
   "author": {
     "name": "Create a Meme",

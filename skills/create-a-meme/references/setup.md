@@ -17,7 +17,7 @@ The key looks like `cam_live_xxxxxxxxxxxxxxxxxxxx`.
   "mcpServers": {
     "createa": {
       "command": "npx",
-      "args": ["-y", "@createa/meme-mcp"],
+      "args": ["-y", "@createa/meme-mcp@0.5.3"],
       "env": { "CAM_API_KEY": "cam_live_xxxxxxxxxxxxxxxxxxxx" }
     }
   }
