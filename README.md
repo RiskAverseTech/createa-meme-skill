@@ -16,13 +16,7 @@ a meme."
 /plugin install createa-meme
 ```
 
-The plugin includes the [`@createa/meme-mcp`](https://www.npmjs.com/package/@createa/meme-mcp) server, so the only other thing you need is a free API key — [grab one here](https://dashboard.createa.meme) (20 free credits/month, no card) — set as `CAM_API_KEY` in the environment Claude Code starts from:
-
-```bash
-export CAM_API_KEY=cam_live_xxxxxxxxxxxxxxxxxxxx
-```
-
-(Add that line to your shell profile, then restart Claude Code. If you use a desktop app that doesn't read your shell profile, configure the server manually as shown under Install below instead.) Then just ask:
+The plugin includes the [`@createa/meme-mcp`](https://www.npmjs.com/package/@createa/meme-mcp) server. When you enable it, Claude Code asks for your free API key ([grab one here](https://dashboard.createa.meme), 20 free credits/month, no card) and stores it securely. Then just ask:
 
 > *"Make me a meme about Monday standups."*
 
@@ -44,7 +38,7 @@ the output is sharp, not generic.
 ### 1. Connect the Create a Meme MCP (one time)
 
 **Claude Code plugin users can skip this step** — the plugin bundles the server
-and reads your key from `CAM_API_KEY` (see Quick start). If you already added
+and asks for your API key when you enable it (see Quick start). If you already added
 the server manually, remove that entry after installing the plugin so the tools
 don't appear twice.
 

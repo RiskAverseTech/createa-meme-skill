@@ -1,7 +1,8 @@
 {
   "name": "createa-meme",
-  "version": "0.2.0",
-  "description": "Turn any idea into a finished meme with Create a Meme — picks the format, writes captions that land, and generates via the @createa/meme-mcp tools.",
+  "displayName": "Create a Meme",
+  "version": "0.3.0",
+  "description": "Turn any idea into a finished meme with Create a Meme \u2014 picks the format, writes captions that land, and generates via the @createa/meme-mcp tools.",
   "author": {
     "name": "Create a Meme",
     "url": "https://createa.meme"
@@ -9,5 +10,25 @@
   "homepage": "https://createa.meme",
   "repository": "https://github.com/RiskAverseTech/createa-meme-skill",
   "license": "MIT",
-  "keywords": ["meme", "meme-generator", "createa", "mcp", "images", "captions"]
+  "keywords": [
+    "meme",
+    "meme-generator",
+    "createa",
+    "mcp",
+    "images",
+    "captions"
+  ],
+  "documentationUrl": "https://docs.createa.meme/docs/mcp",
+  "privacyPolicyUrl": "https://docs.createa.meme/docs/privacy",
+  "termsOfServiceUrl": "https://docs.createa.meme/docs/terms",
+  "userConfig": {
+    "cam_api_key": {
+      "type": "string",
+      "title": "Create a Meme API key",
+      "description": "Your free key from dashboard.createa.meme (starts with cam_live_). 20 free credits/month.",
+      "sensitive": true,
+      "required": true
+    }
+  },
+  "icon": "./.claude-plugin/icon.png"
 }
