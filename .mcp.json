@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "createa": {
+      "command": "npx",
+      "args": ["-y", "@createa/meme-mcp@latest"],
+      "env": {
+        "CAM_API_KEY": "${CAM_API_KEY}"
+      }
+    }
+  }
+}

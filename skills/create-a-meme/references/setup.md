@@ -3,6 +3,12 @@
 The skill needs the `@createa/meme-mcp` server connected. There's nothing to
 install — the client runs it on demand via `npx`.
 
+**Installed as the Claude Code plugin?** The server is already bundled; it only
+needs your key in the `CAM_API_KEY` environment variable (step 1), then a
+restart. If the tools report a missing key — common in desktop apps that don't
+read your shell profile — add the server manually (step 2) instead. Don't keep
+both: remove a manual `createa` entry once the plugin's server works.
+
 ## 1. Get a free API key
 Sign up at <https://dashboard.createa.meme>. Free tier = 20 credits/month (a caption is 1 credit, an AI image 3).
 The key looks like `cam_live_xxxxxxxxxxxxxxxxxxxx`.
